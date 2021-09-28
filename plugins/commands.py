@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("𝙎𝙀𝘼𝙍𝘾𝙃 𝙃𝙀𝙍𝙀", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍", url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2'),
+                        InlineKeyboardButton("🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍", url='https://t.me/darkz_angel'),
                     ],
                    [
                        InlineKeyboardButton("𝙐𝙋𝘿𝘼𝙏𝙀 𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url='https://t.me/MOVIES_HUB66'),
