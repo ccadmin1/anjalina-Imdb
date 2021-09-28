@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/ErrorXbotz')
+                        InlineKeyboardButton('More Bots', url='https://t.me/movieshub_group')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -99,15 +99,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Source Code", url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2'),
+                        InlineKeyboardButton("𝙎𝙀𝘼𝙍𝘾𝙃 𝙃𝙀𝙍𝙀", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍", url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2'),
                     ],
                    [
-                       InlineKeyboardButton("Update Channel", url='https://t.me/ErrorXbotz'),
-                       InlineKeyboardButton("Support Group", url='https://t.me/ErrorXsupport'),
+                       InlineKeyboardButton("𝙐𝙋𝘿𝘼𝙏𝙀 𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url='https://t.me/MOVIES_HUB66'),
+                       InlineKeyboardButton("𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋", url='https://t.me/movieshub_group'),
                     ],
                      [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("𝘼𝘽𝙊𝙐𝙏", callback_data="about")
                     ]
                 ]
             )
