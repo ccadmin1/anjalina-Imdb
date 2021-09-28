@@ -271,7 +271,7 @@ async def showinfo(client, message):
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
         f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
-        f"<b><a =href"https://t.me/movieshub_group">Mᴏᴠɪᴇs Hᴜʙ</b>",
+        f"<a =href"https://t.me/movieshub_group">Mᴏᴠɪᴇs Hᴜʙ</a>",
         quote=True,
         parse_mode="html"
     )
