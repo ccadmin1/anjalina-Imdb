@@ -196,11 +196,11 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
-            InlineKeyboardButton('Source Code', url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2')
+            InlineKeyboardButton('Update Channel', url='https://t.me/MOVIES_HUB66'),
+            InlineKeyboardButton('Group', url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/Jinn_007'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Jinn-Of-Telegram/Media-Search-bot-V2'>Click here</a>\nUpdate Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/darkz_angel'>Dᴀʀᴋ Aɴɢᴇʟ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/movieshub_group'>Click here</a>\nUpdate Channel : <a href='https://t.me/MOVIES_HUB66'>Mᴏᴠɪᴇs Hᴜʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
@@ -271,7 +271,7 @@ async def showinfo(client, message):
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
         f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
-        f"<b>@ErrorXBotz</b>",
+        f"<b><a =href"https://t.me/movieshub_group">Mᴏᴠɪᴇs Hᴜʙ</b>",
         quote=True,
         parse_mode="html"
     )
