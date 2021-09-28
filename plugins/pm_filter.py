@@ -134,9 +134,14 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"🎬 [{get_size(file.file_size)}] 🎥 {file.file_name}"
+                file_name = file.file_name
+                file_size = get_size(file.file_size)
+                file_link = f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
+                    [
+                      InlineKeyboardButton(text=f"{file_name}", url=f"{file_link}"),
+                      InlineKeyboardButton(text=f"{file_size}", url=f"{file_link}")
+                    ]
                 )
         else:
             return
@@ -286,10 +291,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
+                    InlineKeyboardButton('Update Channel', url='https://t.me/MOVIES_HUB66'),
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/Jinn_007'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/darkz_angel'>Dᴀʀᴋ Aɴɢᴇʟ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/MOVIES_HUB66'>Mᴏᴠɪᴇs Hᴜʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -310,7 +315,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/ErrorXBotz'),
+                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/movieshub_group'),
                     ]
                     ]
                 
@@ -341,7 +346,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/ErrorXBotz'),
+                        InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/movieshub_group'),
                     ]
                     ]
                 
