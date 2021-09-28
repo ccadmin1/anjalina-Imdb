@@ -38,9 +38,11 @@ python3 bot.py
 Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) file
 
 
-## Thank You For [Subinps](https://t.me/Subinps_bot)
+## Thank You [Subinps](https://t.me/Subinps_bot)
+## Thank You [Shamil || SmL](https://t.me/shamilhabeeb)
 
 ## Variables
+
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
