@@ -270,7 +270,7 @@ async def showinfo(client, message):
         f"<b>Name</b> : {name}\n"
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
-        f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n"
+        f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
         f"<b>@ErrorXBotz</b>",
         quote=True,
         parse_mode="html"
