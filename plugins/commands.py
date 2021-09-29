@@ -98,15 +98,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url='http://t.me/AD_Movie_Imdb_bot?startgroup=botstart'),
+                        InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url='http://t.me/MH_AUTO_FILTER_V1_BOT?startgroup=botstart'),
                     ],
                    [
-                       InlineKeyboardButton("⭕️𝘾𝙃𝘼𝙉𝙉𝙀𝙇⭕️", url='https://t.me/ADMOVEI'),
-                       InlineKeyboardButton("♻️𝙂𝙍𝙊𝙐𝙋♻️", url='https://t.me/ADMOVEIAD'),
+                       InlineKeyboardButton("CHANNEL", url='https://t.me/MOVIES_HUB66'),
+                       InlineKeyboardButton("GROUP", url='https://t.me/movieshub_group'),
                     ],
                      [
                        InlineKeyboardButton("♂️Search Here♂️", switch_inline_query_current_chat=''),
-                       InlineKeyboardButton("🔥Dev🔥", url='https://t.me/Lucifer_Devil_AD'),
+                       InlineKeyboardButton("🔥Dev🔥", url='https://t.me/darkz_angel'),
                     ],
                      [ InlineKeyboardButton("😈?ഞാൻ ആരാണെന്ന് അറിയണോ?😈", url='https://t.me/ADMOVEIADuwiwwj')
                     ]
