@@ -92,22 +92,23 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_text(
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await cmd.reply_photo(
+            photo="https://telegra.ph/file/2a467bda65baeed804d48.jpg",
+            caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝙎𝙀𝘼𝙍𝘾𝙃 𝙃𝙀𝙍𝙀", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍", url='https://t.me/darkz_angel'),
+                        InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url='http://t.me/MH_AUTO_FILTER_V1_BOT?startgroup=botstart'),
                     ],
                    [
-                       InlineKeyboardButton("𝙐𝙋𝘿𝘼𝙏𝙀 𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url='https://t.me/MOVIES_HUB66'),
-                       InlineKeyboardButton("𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋", url='https://t.me/movieshub_group'),
+                       InlineKeyboardButton("CHANNEL", url='https://t.me/MOVIES_HUB66'),
+                       InlineKeyboardButton("GROUP", url='https://t.me/movieshub_group'),
                     ],
                      [
-                        InlineKeyboardButton("𝘼𝘽𝙊𝙐𝙏", callback_data="about")
+                       InlineKeyboardButton("♂️Search Here♂️", switch_inline_query_current_chat=''),
+                       InlineKeyboardButton("🔥Dev🔥", url='https://t.me/darkz_angel'),
+                    ],
+                     [ InlineKeyboardButton("😈?ഞാൻ ആരാണെന്ന് അറിയണോ?😈", url='https://t.me/c/1516570371/28')
                     ]
                 ]
             )
