@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/movieshub_group')
+                        InlineKeyboardButton('💬 𝙂𝙍𝙊𝙐𝙋', url='https://t.me/movieshub_group')
+                        InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MOVIES_HUB66')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -92,13 +92,13 @@ async def start(bot, cmd):
             )
         )
     else:
-        await cmd.reply_video(
-            video="https://telegra.ph/file/97acce40b4887718a455c.mp4",
+        await cmd.reply_photo(
+            photo="https://telegra.ph/file/010ec2b99995bdb30274b.jpg",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url='http://t.me/MH_AUTO_FILTER_V1_BOT?startgroup=botstart'),
+                        InlineKeyboardButton("Dev", url='http://t.me/Elon_musk3'),
                     ],
                    [
                        InlineKeyboardButton("CHANNEL", url='https://t.me/MOVIES_HUB66'),
@@ -106,9 +106,9 @@ async def start(bot, cmd):
                     ],
                      [
                        InlineKeyboardButton("♂️Search Here♂️", switch_inline_query_current_chat=''),
-                       InlineKeyboardButton("🔥Dev🔥", url='https://t.me/darkz_angel'),
+                       InlineKeyboardButton("2 Dev", url='https://t.me/darkz_angel'),
                     ],
-                     [ InlineKeyboardButton("😈?ഞാൻ ആരാണെന്ന് അറിയണോ?😈", url='https://t.me/ADMOVEIADuwiwwj')
+                     [ InlineKeyboardButton("😈?ഞാൻ ആരാണെന്ന് അറിയണോ?😈", url='https://t.me/Peaky_blinder_bot2')
                     ]
                 ]
             )
