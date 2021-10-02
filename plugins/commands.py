@@ -68,6 +68,9 @@ async def start(bot, cmd):
                     [
                         InlineKeyboardButton('💬 𝙂𝙍𝙊𝙐𝙋', url='https://t.me/movieshub_group'),
                         InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MOVIES_HUB66')
+                    ],
+                    [
+                        InlineKeyboardButton('𝙎𝙀𝘼𝙍𝘾𝙃 𝘼𝙂𝘼𝙄𝙉', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -96,21 +99,13 @@ async def start(bot, cmd):
             photo="https://telegra.ph/file/010ec2b99995bdb30274b.jpg",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("Dev", url='http://t.me/Elon_musk3'),
-                    ],
-                   [
-                       InlineKeyboardButton("CHANNEL", url='https://t.me/MOVIES_HUB66'),
-                       InlineKeyboardButton("GROUP", url='https://t.me/movieshub_group'),
-                    ],
-                     [
-                       InlineKeyboardButton("♂️Search Here♂️", switch_inline_query_current_chat=''),
-                       InlineKeyboardButton("2 Dev", url='https://t.me/darkz_angel'),
-                    ],
-                     [ InlineKeyboardButton("😈?ഞാൻ ആരാണെന്ന് അറിയണോ?😈", url='https://t.me/Peaky_blinder_bot2')
-                    ]
-                ]
+                [[
+                InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
+                InlineKeyboardButton("Group", url="https://t.me/movieshub_group")
+                ],[
+                InlineKeyboardButton("😊 About", callback_data="about"),
+                InlineKeyboardButton("🔒 Close", callback_data="close")
+                ]]
             )
         )
 
