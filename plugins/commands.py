@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/MOVIES_HUB66'),
-            InlineKeyboardButton('Group', url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2')
+            InlineKeyboardButton('Channel', url='https://t.me/MOVIES_HUB66'),
+            InlineKeyboardButton('Group', url='https://t.me/movieshub_group')
         ]
         ]
     await message.reply(text="<b>Developer : <a href='https://t.me/darkz_angel'>Dᴀʀᴋ Aɴɢᴇʟ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/movieshub_group'>Click here</a>\nUpdate Channel : <a href='https://t.me/MOVIES_HUB66'>Mᴏᴠɪᴇs Hᴜʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -202,8 +202,8 @@ async def bot_info(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
-            InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
+            InlineKeyboardButton('Channel', url='https://t.me/movies_hub66'),
+            InlineKeyboardButton('Group', url='https://t.me/movieshub_group')
         ]
         ]
     await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
