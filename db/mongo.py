@@ -1,4 +1,4 @@
-from info import, DATABASE_URI
+from info import DATABASE_URI
 
 import pymongo
 DB_URI = DATABASE_URI
