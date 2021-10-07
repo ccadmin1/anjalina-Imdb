@@ -1,7 +1,7 @@
 from info import DATABASE_URI
 
 import pymongo
-DB_URI = DATABASE_URI
+DB_URL = DATABASE_URI
 DB_NAME = "ALBusers" 
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
