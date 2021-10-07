@@ -72,8 +72,6 @@ async def start(bot, cmd):
                 title = files.file_name
                 size=files.file_size
                 f_caption=files.caption
-                user_id = int(cmd.from_user.id)
-                insert(user_id)
                 if CUSTOM_FILE_CAPTION:
                     try:
                         f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
@@ -82,6 +80,8 @@ async def start(bot, cmd):
                         f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
+                user_id = int(cmd.from_user.id)
+                insert(user_id)
                 buttons = [
                     [
                         InlineKeyboardButton('💬 𝙂𝙍𝙊𝙐𝙋', url='https://t.me/movieshub_group'),
