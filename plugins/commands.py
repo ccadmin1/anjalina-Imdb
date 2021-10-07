@@ -1,11 +1,27 @@
 import os
+import time
 import logging
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from info import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
 from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
+from db.mongo import insert, getid
 logger = logging.getLogger(__name__)
+
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
+async def broadcast(bot, message):
+ if (message.reply_to_message):
+   ms = await message.reply_text("Geting All ids from database ...........")
+   ids = getid()
+   tot = len(ids)
+   await ms.edit(f"Starting Broadcast .... \n Sending Message To {tot} Users")
+   for id in ids:
+     try:
+     	await message.reply_to_message.copy(id)
+     except:
+     	pass
+
 
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
@@ -56,6 +72,8 @@ async def start(bot, cmd):
                 title = files.file_name
                 size=files.file_size
                 f_caption=files.caption
+                user_id = int(cmd.from_user.id)
+                insert(user_id)
                 if CUSTOM_FILE_CAPTION:
                     try:
                         f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
