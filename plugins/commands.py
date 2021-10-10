@@ -1,5 +1,6 @@
 import os
 import time
+import random
 import logging
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -8,6 +9,14 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 from db.mongo import insert, getid
 logger = logging.getLogger(__name__)
+
+PHOTO = [
+    "https://telegra.ph/file/233d0c5a865be7adffac4.jpg",
+    "https://telegra.ph/file/893d4cf40e1b46b0e6106.jpg",
+    "https://telegra.ph/file/86b1f3b3280cc582904b4.jpg",
+    "https://telegra.ph/file/4b4f39c515efb47b87a23.jpg",
+    "https://telegra.ph/file/2028534556eee3fc1a0ac.jpg"
+]
 
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
@@ -41,9 +50,10 @@ async def start(bot, cmd):
                     return
             except UserNotParticipant:
                 ident, file_id = cmd.text.split("_-_-_-_")
-                await bot.send_message(
+                await bot.send_photo(
                     chat_id=cmd.from_user.id,
-                    text="** 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയതത്തിനു ശേഷം Try Again ബട്ടൺ ക്ലിക്ക് ചെയ്യൂ.😁 **",
+                    photo=f"{random.choice(PHOTO)}",
+                    caption="** 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയതത്തിനു ശേഷം Try Again ബട്ടൺ ക്ലിക്ക് ചെയ്യൂ.😁 **",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -101,9 +111,10 @@ async def start(bot, cmd):
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
     elif len(cmd.command) > 1 and cmd.command[1] == 'subscribe':
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
-        await bot.send_message(
+        await bot.send_photo(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            photo=f"{random.choice(PHOTO)}",
+            caption="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -114,7 +125,7 @@ async def start(bot, cmd):
         )
     else:
         await cmd.reply_photo(
-            photo="https://telegra.ph/file/010ec2b99995bdb30274b.jpg",
+            photo=f"{random.choice(PHOTO)}",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
