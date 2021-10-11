@@ -346,10 +346,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('𝖬𝖧 𝖢𝖧𝖠𝖭𝖭𝖤𝖫', url='https://t.me/MOVIES_HUB66'),
-                        InlineKeyboardButton('𝖬𝖧 𝖦𝖱𝖮𝖴𝖯', url='https://t.me/movieshub_group')
-                    ],
-                    [
+                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/movieshub_group'),
+                    ]
+                    ]
                 
                 await query.answer()
                 await client.send_cached_media(
