@@ -135,15 +135,21 @@ async def start(bot, cmd):
             photo=f"{random.choice(PHOTO)}",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
-                [[
-                InlineKeyboardButton("🔍 Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("Group", url="https://t.me/movieshub_group")
-                ],[
-                InlineKeyboardButton("😊 About", callback_data="about"),
-                InlineKeyboardButton("🔒 Close", callback_data="close")
-                ]]
+                [
+                    [
+                        InlineKeyboardButton("➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url= "https://t.me/MH_AUTO_FILTER_5BOT?startgroup=true")
+                    ],
+                    [
+                        InlineKeyboardButton("🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("𝖦𝗋𝗈𝗎𝗉", url="https://t.me/movieshub_group")
+                    ],
+                    [
+                        InlineKeyboardButton("🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋", url="https://t.me/darkz_angel"),
+                        InlineKeyboardButton("😊 𝖠𝖻𝗈𝗎𝗍", callback_data="about")
+                    ]    
+                ]
             )
-        )
+         )
 
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
