@@ -11,11 +11,18 @@ from db.mongo import insert, getid
 logger = logging.getLogger(__name__)
 
 PHOTO = [
-    "https://telegra.ph/file/233d0c5a865be7adffac4.jpg",
-    "https://telegra.ph/file/893d4cf40e1b46b0e6106.jpg",
-    "https://telegra.ph/file/86b1f3b3280cc582904b4.jpg",
-    "https://telegra.ph/file/4b4f39c515efb47b87a23.jpg",
-    "https://telegra.ph/file/2028534556eee3fc1a0ac.jpg"
+    "https://telegra.ph/file/e644ec774f1052836e5ac.jpg",
+    "https://telegra.ph/file/5743fbb870777759392e0.jpg",
+    "https://telegra.ph/file/03f9bd9d43716dbc6e705.jpg",
+    "https://telegra.ph/file/727e74ca770cf573bc137.jpg",
+    "https://telegra.ph/file/ad3be0882670bd48fd087.jpg",
+    "https://telegra.ph/file/09dab6cd2dba32093b94b.jpg",
+    "https://telegra.ph/file/36f828411ade435d32a33.jpg",
+    "https://telegra.ph/file/4193ddd468ad863245de4.jpg",
+    "https://telegra.ph/file/6ad45cb9dff7ed09f6215.jpg",
+    "https://telegra.ph/file/f1fe82861a128f52ed49c.jpg",
+    "https://telegra.ph/file/5c28553939a3266a1f44d.jpg",
+    "https://telegra.ph/file/94e3e541682185ad9a231.jpg"
 ]
 
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
