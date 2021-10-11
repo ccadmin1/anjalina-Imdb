@@ -4,7 +4,7 @@
 
 </a>  
 </p>
-<img src="https://telegra.ph/file/4754809c9c5c33b871cc5.jpg"><br>
+<img src="https://telegra.ph/file/312b518f6a2c75090fe42.jpg"><br>
 
 ## Example Bot [Imdb Bot](https://t.me/Ma_autofilterbot)
 
