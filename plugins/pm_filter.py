@@ -315,7 +315,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/movieshub_group'),
+                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/MoviesFactory_Group'),
                     ]
                     ]
                 
@@ -346,7 +346,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/movieshub_group'),
+                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/MoviesFactory_Group'),
                     ]
                     ]
                 
