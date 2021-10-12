@@ -11,18 +11,8 @@ from db.mongo import insert, getid
 logger = logging.getLogger(__name__)
 
 PHOTO = [
-    "https://telegra.ph/file/e644ec774f1052836e5ac.jpg",
-    "https://telegra.ph/file/5743fbb870777759392e0.jpg",
-    "https://telegra.ph/file/03f9bd9d43716dbc6e705.jpg",
-    "https://telegra.ph/file/727e74ca770cf573bc137.jpg",
-    "https://telegra.ph/file/ad3be0882670bd48fd087.jpg",
-    "https://telegra.ph/file/09dab6cd2dba32093b94b.jpg",
-    "https://telegra.ph/file/36f828411ade435d32a33.jpg",
-    "https://telegra.ph/file/4193ddd468ad863245de4.jpg",
-    "https://telegra.ph/file/6ad45cb9dff7ed09f6215.jpg",
-    "https://telegra.ph/file/f1fe82861a128f52ed49c.jpg",
-    "https://telegra.ph/file/5c28553939a3266a1f44d.jpg",
-    "https://telegra.ph/file/94e3e541682185ad9a231.jpg"
+    "https://telegra.ph/file/15ef4d5834a0777d42b3f.jpg",
+    "https://telegra.ph/file/5f855c127ba18196d6d6b.jpg"
 ]
 
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
@@ -101,11 +91,7 @@ async def start(bot, cmd):
                 insert(user_id)
                 buttons = [
                     [
-                        InlineKeyboardButton('💬 𝙂𝙍𝙊𝙐𝙋', url='https://t.me/movieshub_group'),
-                        InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MOVIES_HUB66')
-                    ],
-                    [
-                        InlineKeyboardButton('𝙎𝙀𝘼𝙍𝘾𝙃 𝘼𝙂𝘼𝙄𝙉', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('📢 Join Channel', url='https://t.me/MF_Linkz')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -137,14 +123,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url= "https://t.me/MH_AUTO_FILTER_5BOT?startgroup=true")
-                    ],
-                    [
                         InlineKeyboardButton("🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("𝖦𝗋𝗈𝗎𝗉", url="https://t.me/movieshub_group")
+                        InlineKeyboardButton("𝖦𝗋𝗈𝗎𝗉", url="https://t.me/MoviesFactory_Group")
                     ],
                     [
-                        InlineKeyboardButton("🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋", url="https://t.me/darkz_angel"),
+                        InlineKeyboardButton("🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋", url="https://t.me/AkFronic_Jack"),
                         InlineKeyboardButton("😊 𝖠𝖻𝗈𝗎𝗍", callback_data="about")
                     ]    
                 ]
@@ -234,18 +217,18 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Channel', url='https://t.me/MOVIES_HUB66'),
-            InlineKeyboardButton('Group', url='https://t.me/movieshub_group')
+            InlineKeyboardButton('Channel', url='https://t.me/MF_Linkz'),
+            InlineKeyboardButton('Group', url='https://t.me/MoviesFactory_Group')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/darkz_angel'>Dᴀʀᴋ Aɴɢᴇʟ</a>\nEditor : <a href='https://t.me/Elon_Musk3'>Eʟᴏɴ Mᴜsᴋ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/movieshub_group'>Click here</a>\nUpdate Channel : <a href='https://t.me/MOVIES_HUB66'>Mᴏᴠɪᴇs Hᴜʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/AkFronic_Jack'>Mᴀsᴛᴇʀ</a>\nEditor : <a href='https://t.me/darkz_angel'>Dᴀʀᴋ Aɴɢᴇʟ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/movieshub_group'>Click here</a>\nUpdate Channel : <a href='https://t.me/MOVIES_HUB66'>Mᴏᴠɪᴇs Hᴜʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Channel', url='https://t.me/movies_hub66'),
-            InlineKeyboardButton('Group', url='https://t.me/movieshub_group')
+            InlineKeyboardButton('Channel', url='https://t.me/MF_Linkz'),
+            InlineKeyboardButton('Group', url='https://t.me/MoviesFactory_Group')
         ]
         ]
     await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -309,7 +292,7 @@ async def showinfo(client, message):
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
         f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
-        f"<b>@movieshub_group</b>",
+        f"<b>@MoviesFactory_Group</b>",
         quote=True,
         parse_mode="html"
     )
