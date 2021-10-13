@@ -92,8 +92,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('📢 Join Channel', url='https://t.me/MF_Linkz')
-                    ]
-                    ]
+                    ]]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
                     file_id=file_id,
