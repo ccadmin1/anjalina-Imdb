@@ -126,13 +126,16 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾 🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("🗯 Ｇｒｏｕｐ 🗯", url="https://t.me/movieReqGroup1")
+                        InlineKeyboardButton('❔ How To Use Me ❔', url='https://t.me/movieReqGroup1')
+                    ],[                    
+                        InlineKeyboardButton("Sᴇᴀʀᴄʜ Hᴇʀᴇ 🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("Ｇｒｏｕｐ 🗯", url='https://t.me/movieReqGroup1')
                     ],
                     [
-                        InlineKeyboardButton("🦹‍♂️ Ｄｅｖ 🦹‍♀️", url="https://t.me/Anjalinas"),
-                        InlineKeyboardButton("⚙️ Ａｂｏｕｔ ⚙️", callback_data="about")
-                    ]    
+                        InlineKeyboardButton('Ｄｅｖ👩‍💻', url='https://t.me/Anjalinas'),
+                        InlineKeyboardButton("Ａｂｏｕｔ💡", callback_data="about")
+                    ],
+                    [   InlineKeyboardButton('➕ Add Me To Your Group ', url='https://t.me/Anjalina_bot?startgroup=true'),]
                 ]
             )
          )
@@ -234,7 +237,15 @@ async def bot_info(bot, message):
             InlineKeyboardButton('🗯 Ｇｒｏｕｐ 🗯', url='https://t.me/movieReqGroup1')
         ]
         ]
-    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="""🙋🏻‍♂️   Hellooo    <code> {}🤓</code>
+       
+▶️ ꜱᴇɴᴅ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ᴏꜰ мovιᴇ ꜱᴇʀɪᴇꜱ ( ᴜꜱᴇ ɢᴏᴏɢʟᴇ.ᴄᴏᴍ ᴛᴏ ɢᴇᴛ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ! ) .
+
+▫️ Exᴀᴍᴘʟᴇ 1 : Lᴜᴄɪꜰᴇʀ
+▫️ Exᴀᴍᴘʟᴇ 2 : Lᴜᴄɪꜰᴇʀ мᴀʟᴀʏᴀʟᴀм
+▫️ Exᴀᴍᴘʟᴇ 1 : Lᴜᴄɪꜰᴇʀ 2021
+
+🔺 ɪꜰ ʏᴏᴜ ᴄᴀɴᴛ ꜰɪɴᴅ ᴛʜᴇ мovιᴇ ᴛʜᴀᴛ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ. ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ꜱᴇɴᴅ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ <a href='https://t.me/Anjalinas'>Dᴇᴠ</a>""", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('info') & (filters.private | filters.group))
 async def showinfo(client, message):
