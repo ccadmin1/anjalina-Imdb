@@ -17,7 +17,8 @@
 * Once files saved in Database , exists until you manually deletes. (No Worry if post gets deleted from source channel.)
 * Added Force subscribe (Only channel subscribes can use the bot)
 * Ability to restrict groups(AUTH_GROUPS)
-
+* Added broadcast feature
+* added info feature
 
 ## If Any Doubts Ask In [Update Channel](https://t.me/ErrorXbotz), [Support Group](https://t.me/ErrorXsupport)
 
@@ -81,6 +82,7 @@ total - Show total of saved files
 delete - Delete file from database
 index - Index all files from channel.
 logger - Get log file
+broadcast - send message to subscribers
 ```
 
 ## Tips
