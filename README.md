@@ -1,10 +1,10 @@
 # Modified Version Of [Media Search bot](https://github.com/subinps/Media-Search-bot)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Adv+auto+filter+bot+v1;click+deploy+to+heroku+button;By+Dark+Angel+:)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Adv+auto+filter+bot+v1;click+deploy+to+heroku+button;By+Anjalina:)](https://git.io/typing-svg)
 
 </a>  
 </p>
-<img src="https://telegra.ph/file/312b518f6a2c75090fe42.jpg"><br>
+<img src="https://telegra.ph/file/d053a8e9ef4ed93df38a0.jpg"><br>
 
 ## Example Bot [Imdb Bot](https://t.me/Ma_autofilterbot)
 
