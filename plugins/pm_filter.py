@@ -6,6 +6,13 @@ import re
 import random
 from pyrogram.errors import UserNotParticipant
 from utils import get_filter_results, get_file_details, is_subscribed, get_poster
+STICKER= [
+         "CAACAgUAAxkBAALRtWFoDP69G-sMxejo3qBK9U0Htv-CAAKuAgACYQsIVz-eYIRBH1tLIQQ", 
+         "CAACAgUAAxkBAALRsWFoDPHnwi4JgjCf7QQpVZdtLse4AAK6DgACiQABcx96qOL0EJ8ZfyEE", 
+         "CAACAgUAAxkBAALRrWFoDOAHt5HCuZIbsGBgy7-xEY8ZAAKdDgACiQABcx-J5shgP411CSEE", 
+         "CAACAgUAAxkBAALRkmFnHQY7A5RbJ-U-aHhlktj2eVmcAAKpDQACiQABcx_0n9Ctye5K-CEE"
+         ]
+
 BUTTONS = {}
 BOT = {}
 
@@ -75,7 +82,7 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAACAgUAAxkBAALRkmFnHQY7A5RbJ-U-aHhlktj2eVmcAAKpDQACiQABcx_0n9Ctye5K-CEE')
+            await client.send_sticker(chat_id=message.from_user.id, sticker=f"{random.choice(STICKER)}')
             return
 
         if not btn:
@@ -300,7 +307,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('', url='https://t.me/MF_Linkz'),
+                    InlineKeyboardButton('🗯 Ｇｒｏｕｐ 🗯', url='https://t.me/movieReqGroup1'),
                 ]
                 ]
             await query.message.edit(text="<b>🕵️‍♂️ Ｄｅｖ: <a href='https://t.me/anjalinas'>Ｄｅｖ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n 🗯Ｇｒｏｕｐ : <a href='https://t.me/movieReqGroup1'>Rᴇϙᴜᴇsᴛ Mᴏᴠɪᴇs</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
