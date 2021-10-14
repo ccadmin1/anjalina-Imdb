@@ -58,7 +58,7 @@ async def start(bot, cmd):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🔰 JOIN OUR CHANNEL 🔰", url=invite_link.invite_link)
+                                InlineKeyboardButton("💢 JOIN OUR CHANNEL 💢", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -130,7 +130,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("🗯 Ｇｒｏｕｐ 🗯", url="https://t.me/movieReqGroup1")
                     ],
                     [
-                        InlineKeyboardButton("🦹‍♂️ Ｄｅｖ 🦹‍♀️", url="https://t.me/AkFronic_Jack"),
+                        InlineKeyboardButton("🦹‍♂️ Ｄｅｖ 🦹‍♀️", url="https://t.me/Anjalinas"),
                         InlineKeyboardButton("⚙️ Ａｂｏｕｔ ⚙️", callback_data="about")
                     ]    
                 ]
@@ -220,18 +220,18 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Channel', url='https://t.me/MF_Linkz'),
-            InlineKeyboardButton('Group', url='https://t.me/MoviesFactory_Group')
+            InlineKeyboardButton('💢 Ｃｈａｎｎｅｌ 💢', url='https://t.me/cinemacollections'),
+            InlineKeyboardButton('🗯 Ｇｒｏｕｐ 🗯', url='https://t.me/movieReqGroup1')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/AkFronic_Jack'>Mᴀsᴛᴇʀ</a>\nEditor : <a href='https://t.me/darkz_angel'>Dᴀʀᴋ Aɴɢᴇʟ</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/movieshub_group'>Click here</a>\nUpdate Channel : <a href='https://t.me/MOVIES_HUB66'>Mᴏᴠɪᴇs Hᴜʙ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/Anjalinas'>Aɴᴊᴀʟɪɴᴀ</a>\nCode : <a href='https://t.me/Dhashamoolam_Dhamu'>Ɗнαѕнαмσσℓαм</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='tg://settings'>Cʟɪᴄᴋ Mᴇ</a>\nCʜᴀɴɴᴇʟ : <a href='https://t.me/cinemacollections'>Ｃｈａｎｎｅｌ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Channel', url='https://t.me/MF_Linkz'),
-            InlineKeyboardButton('Group', url='https://t.me/MoviesFactory_Group')
+            InlineKeyboardButton('💢 Ｃｈａｎｎｅｌ 💢', url='https://t.me/Cinemacollections'),
+            InlineKeyboardButton('🗯 Ｇｒｏｕｐ 🗯', url='https://t.me/movieReqGroup1')
         ]
         ]
     await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -295,7 +295,7 @@ async def showinfo(client, message):
         f"<b>UserID</b> : <code>{id}</code>\n"
         f"<b>Username Name</b> : {user_name}\n"
         f"<b>Permanant USER Link</b> : <a href='tg://user?id={id}'>Link ❗️</a>\n\n"
-        f"<b>@MoviesFactory_Group</b>",
+        f"<b>@MovieReqGroup1</b>",
         quote=True,
         parse_mode="html"
     )
