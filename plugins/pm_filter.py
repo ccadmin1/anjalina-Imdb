@@ -60,6 +60,11 @@ async def filter(client, message):
         return
     if 2 < len(message.text) < 100:    
         btn = []
+        btn.append(
+
+            [InlineKeyboardButton(text="🚨 Subscribe Channel And Try 🚨", url="https://t.me/joinchat/_T2AlAivCsVkZWRl")]
+
+            )
         search = message.text
         files = await get_filter_results(query=search)
         if files:
@@ -121,7 +126,11 @@ async def group(client, message):
         return
     if 2 < len(message.text) < 50:    
         btn = []
+        btn.append(
 
+            [InlineKeyboardButton(text="🚨 Subscribe Channel And Try 🚨", url="https://t.me/cinemacollections")]
+
+            )
         search = message.text
         result_txt = f"**📽 Title: {search}**\n**🌟 Rating: {random.choice(RATING)}**\n**🎭 Genre: {random.choice(GENRES)}**\n**©️ @CinemaCollections 🍿\n**𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲\n**"
 
