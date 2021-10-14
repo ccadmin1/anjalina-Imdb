@@ -62,7 +62,7 @@ async def filter(client, message):
         btn = []
         btn.append(
 
-            [InlineKeyboardButton(text="🚨 Subscribe Channel And Try 🚨", url="https://t.me/joinchat/_T2AlAivCsVkZWRl")]
+            [InlineKeyboardButton(text="🚨 Subscribe Channel And Try 🚨", url="https://t.me/cinemacollections")]
 
             )
         search = message.text
