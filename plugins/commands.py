@@ -11,8 +11,12 @@ from db.mongo import insert, getid
 logger = logging.getLogger(__name__)
 
 PHOTO = [
-    "https://telegra.ph/file/15ef4d5834a0777d42b3f.jpg",
-    "https://telegra.ph/file/5f855c127ba18196d6d6b.jpg"
+    "https://telegra.ph/file/d053a8e9ef4ed93df38a0.jpg",
+    "https://telegra.ph/file/d1c6ee6d32e142f3674ed.jpg", 
+    "https://telegra.ph/file/8fd7710ee17bd34a963a5.jpg", 
+    "https://telegra.ph/file/ecb7510e187f0e3b60852.jpg", 
+    "https://telegra.ph/file/ef7f1cbc33ac9ee47578d.jpg", 
+    "https://telegra.ph/file/a5ce5774734d8c119c630.jpg"
 ]
 
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["broadcast"]))
@@ -50,7 +54,7 @@ async def start(bot, cmd):
                 await bot.send_photo(
                     chat_id=cmd.from_user.id,
                     photo=f"{random.choice(PHOTO)}",
-                    caption="** 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയതത്തിനു ശേഷം Try Again ബട്ടൺ ക്ലിക്ക് ചെയ്യൂ.😁 **",
+                    caption="** 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\n🔊 ഞങ്ങളുടെ 𝙈𝙖𝙞𝙣 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 ജോയിൻ ചെയ്താൽ മാത്രമേ സിനിമ ലഭിക്കുകയുള്ളൂ.... 😁\n\nJoin ചെയ്ത ശേഷം Try Again ബട്ടൺ ക്ലിക്ക് ചെയ്യൂ.😁 **",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -91,7 +95,7 @@ async def start(bot, cmd):
                 insert(user_id)
                 buttons = [
                     [
-                        InlineKeyboardButton('📢 Join Channel', url='https://t.me/MF_Linkz')
+                        InlineKeyboardButton('💢 Join Channel 💢', url='https://t.me/cinemacollections')
                     ]]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
@@ -110,7 +114,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("💢 Join Channel 💢", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -122,12 +126,12 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("𝖦𝗋𝗈𝗎𝗉", url="https://t.me/MoviesFactory_Group")
+                        InlineKeyboardButton("🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾 🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🗯 Ｇｒｏｕｐ 🗯", url="https://t.me/movieReqGroup1")
                     ],
                     [
-                        InlineKeyboardButton("🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋", url="https://t.me/AkFronic_Jack"),
-                        InlineKeyboardButton("😊 𝖠𝖻𝗈𝗎𝗍", callback_data="about")
+                        InlineKeyboardButton("🦹‍♂️ Ｄｅｖ 🦹‍♀️", url="https://t.me/AkFronic_Jack"),
+                        InlineKeyboardButton("⚙️ Ａｂｏｕｔ ⚙️", callback_data="about")
                     ]    
                 ]
             )
