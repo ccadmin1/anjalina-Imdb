@@ -1,5 +1,5 @@
 {
-    "name": "Media Search bot",
+    "name": "Anjalina",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
@@ -14,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2",
-    "repository": "https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2",
+    "website": "https://github.com/ccadmin1/anjalina-Imdb",
+    "repository": "https://github.com/ccadmin1/anjalina-Imdb",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token from @BotFather",
